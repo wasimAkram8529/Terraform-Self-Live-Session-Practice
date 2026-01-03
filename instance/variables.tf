@@ -14,7 +14,7 @@ variable "instance_type"{
 }
 
 variable "key_name" {
-  description = "EC@ Key pair Name"
+  description = "EC2 Key pair Name"
   type = string
 }
 
