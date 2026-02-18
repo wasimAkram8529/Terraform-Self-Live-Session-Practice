@@ -1,8 +1,9 @@
-resource "aws_instance" "ec2" {
-  ami = "ami-0ecb62995f68bb549"
-  instance_type = "t2.micro"
-  subnet_id = var.subnet
+resource "aws_instance" "web-server" {
+  ami = var.ami
+  instance_type = var.instance_type
   vpc_security_group_ids = [var.sg]
+  subnet_id = var.subnet
+
   user_data = <<EOF
   #!/bin/bash
   sudo apt-get update -y

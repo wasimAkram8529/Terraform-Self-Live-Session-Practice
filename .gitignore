@@ -1,0 +1,4 @@
+Practice-02-2026/modules/.terraform/
+Practice-02-2026/modules/terraform.tfstate*
+alb-modules/terraform.tfstate*
+alb-modules/terraform.tfstate*
